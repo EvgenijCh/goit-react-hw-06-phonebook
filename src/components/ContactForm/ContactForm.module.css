@@ -1,0 +1,18 @@
+.inputForm {
+  width: 400px;
+  height: 250px;
+  padding-left: 20px;
+  border: 2px solid  rgb(155, 159, 165);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.dataInput {
+  font-weight: 400;
+}
+
+.addContact {
+  border: 1px solid rgb(155, 159, 165);
+  padding: 7px 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

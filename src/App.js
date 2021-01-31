@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ContactForm from "./components/ContactForm";
+import ContactsList from "./components/ContactsList";
+import Filter from "./components/Filter";
+import s from './App.module.css'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className={s.titleSections}>Phonebook</h1>
+      <ContactForm />
+      <h2 className={s.titleSections}>Contacts</h2>
+      <p>Find contacts by name</p>
+      <Filter />
+      <ContactsList />
+    </>
   );
 }
 
-export default App;
